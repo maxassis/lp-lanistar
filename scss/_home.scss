@@ -1,10 +1,12 @@
 .hero {
-    border: 1px solid red;
-    height: 936px;
-    padding-block: 93px 0;
+    
     
     &__external-container {
-        background: url("../images/Group 27522.png") bottom no-repeat;   
+    border: 1px solid red;
+    height: 936px;
+    background: url("../images/mockup.png") bottom no-repeat;   
+    background-position-x: right;
+    padding-block: 92.93px 0;    
     }
 
     &__text-wraper {
