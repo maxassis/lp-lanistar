@@ -14,3 +14,40 @@
     margin-top: -0.2288em;
     display: table;
   }
+
+  .bar72 {
+    font-size: 72px;
+   // line-height: 75.1875px;
+  }
+  
+  .bar72::before {
+    content: "";
+    margin-bottom: -0.153em;
+    display: table;
+  }
+  
+  .bar72::after {
+    content: "";
+    margin-top: -0.1803em;
+    display: table;
+  }
+
+
+  .bar18 {
+    font-size: 18px;
+    line-height: 28.7969px;
+  }
+  
+  .bar18::before {
+    content: "";
+    margin-bottom: -0.4308em;
+    display: table;
+  }
+  
+  .bar18::after {
+    content: "";
+    margin-top: -0.4581em;
+    display: table;
+  }
+  
+

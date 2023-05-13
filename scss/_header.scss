@@ -8,6 +8,7 @@
     height: 96px;
     background: rgba(255, 255, 255, 0.9);
     backdrop-filter: blur(24px);
+    border-bottom: 1px solid hsla(213, 10%, 82%, 0.301);
 }
 
 .header {
@@ -17,6 +18,19 @@
     padding-block: 24px 23.93px;
     height: 100%;
     padding-inline: 0;
+    position: relative;
+    border-left: 2px solid hsla(302, 100%, 85%, 0.5);
+    border-right: 2px solid hsla(302, 100%, 85%, 0.5);
+
+    &::after {
+        content: "";
+        inline-size: 1290px;
+        height: 2px;
+        background-color: hsla(302, 100%, 85%, 0.5);
+        position: absolute;
+        bottom: 44px;
+        left: -40px;
+    }
 
     &__options {
         display: flex;
