@@ -1,0 +1,16 @@
+  .bar16 {
+    font-size: 16px;
+    line-height: 19.2734px;
+  }
+  
+  .bar16::before {
+    content: "";
+    margin-bottom: -0.2712em;
+    display: table;
+  }
+  
+  .bar16::after {
+    content: "";
+    margin-top: -0.2288em;
+    display: table;
+  }

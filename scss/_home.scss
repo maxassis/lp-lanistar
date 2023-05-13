@@ -1,0 +1,17 @@
+.hero {
+    border: 1px solid red;
+    height: 936px;
+    padding-block: 93px 0;
+    
+    &__external-container {
+        background: url("../images/Group 27522.png") bottom no-repeat;   
+    }
+
+    &__text-wraper {
+        inline-size: min(100%, 574px);
+        height: 375px;
+        border: 1px solid red;
+    }
+
+
+}
