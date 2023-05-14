@@ -1,35 +1,33 @@
 .hero {
-    
-    &__external-container {   
-    height: 936px;
-    background: url("../images/mockup.png") bottom no-repeat;   
-    background-position-x: right;
-    padding-block: 92.93px 0;
-    position: relative;
 
-    &::before {
-        content: "";
-        inline-size: 1037px;
-        height: 2px;
-        background-color: hsla(302, 100%, 85%, 0.5);
-        position: absolute;
-        translateX: 180deg;
-        rotate: 90deg;
-        left: -174.1px;
-        top: 517px
-    }    
+    &__external-container {
+        height: 936px;
+        background: url("../images/mockup.png") bottom no-repeat;
+        background-position-x: right;
+        padding-block: 92.93px 0;
+        position: relative;
 
-    &::after {
-        content: "";
-        inline-size: 1037px;
-        height: 2px;
-        background-color: hsla(302, 100%, 85%, 0.5);
-        position: absolute;
-        translateX: 180deg;
-        rotate: 90deg;
-        right: -174.4px;
-        bottom: 417px;
-    }   
+        &::before {
+            content: "";
+            inline-size: 1113px;
+            height: 2px;
+            background-color: hsla(302, 100%, 85%, 0.5);
+            position: absolute;
+            rotate: 90deg;
+            left: -11.2%;
+            top: 49%;
+        }
+
+        &::after {
+            content: "";
+            inline-size: 1113px;
+            height: 2px;
+            background-color: hsla(302, 100%, 85%, 0.5);
+            position: absolute;
+            rotate: 90deg;
+            right: -11.3%;
+            top: 49%;
+        }
     }
 
     &__circle-arrow {
@@ -43,7 +41,7 @@
         height: 375px;
     }
 
-    &__title-wrapper{
+    &__title-wrapper {
         display: flex;
     }
 
@@ -56,7 +54,7 @@
         margin-top: 24px;
     }
 
-    &__button{
+    &__button {
         padding: 14px 32px 15px;
         inline-size: 209px;
         font-weight: 600;
@@ -68,7 +66,7 @@
         color: #FFFFFF;
     }
 
-    &__coming-soon{
+    &__coming-soon {
         position: relative;
         inline-size: 258px;
         height: 72px;
@@ -81,7 +79,7 @@
             background-color: #6ED8FF;
             border-radius: 20px;
             position: absolute;
-            bottom:0px;
+            bottom: 0px;
             opacity: 0.5;
         }
 
@@ -92,7 +90,7 @@
             background-color: #07BCFF;
             border-radius: 20px;
             position: absolute;
-            bottom:-4px;
+            bottom: -4px;
         }
     }
 }
@@ -102,14 +100,13 @@
     padding-top: 124px;
 
     &__wrapper {
-        border-bottom: 2px solid #A6AEB8;
+        border-bottom: 2px solid rgba(205, 209, 214, .301);
         height: 100%;
     }
 
     &__text-wraper {
         inline-size: 1047px;
         height: 197px;
-        //margin-top: 144px;
         display: flex;
         justify-content: space-between;
         position: relative;
@@ -129,7 +126,7 @@
         inline-size: 380px;
         height: 112px;
 
-        &> span {
+        &>span {
             font-weight: 300;
             font-size: 56px;
             line-height: 100%;
@@ -144,8 +141,6 @@
         gap: 24px;
         margin-bottom: 24px;
         font-weight: 400;
-        // font-size: 18px;
-        // line-height: 140%;
         letter-spacing: -0.005em;
         color: #475567;
     }
@@ -155,4 +150,108 @@
         font-weight: 500;
     }
 
+}
+
+.bank-details {
+    height: 842px;
+
+    &__content-wrapper {
+        display: flex;
+        justify-content: space-between;
+        height: 582px;
+    }
+
+    &__text-wrapper {
+        inline-size: 535px;
+        height: 521px;
+        margin-top: 38px;
+    }
+
+    &__main-title {
+        font-weight: 500;
+        font-size: 40px;
+        line-height: 140%;
+        text-transform: uppercase;
+        color: #7C8999;
+    }
+
+    &__description {
+        margin-top: 24px;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 140%;
+        color: #475567;
+    }
+
+    &__itens-wrapper {
+        margin-top: 40px;
+    }
+
+    &__item {
+        display: flex;
+        gap: 19px;
+
+        &:not(:last-child) {
+            margin-bottom: 32px;
+        }
+
+        &>span {
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 140%;
+            letter-spacing: -0.005em;
+            color: #475567;
+        }
+    }
+
+    &__button {
+        inline-size: 224px;
+        height: 51px;
+        background: #07BCFF;
+        border-radius: 6px;
+        border: 0px;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 140%;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        margin-top: 48px;
+    }
+
+    &__image-wrapper {
+        inline-size: 416px;
+        height: 582px;
+        background: linear-gradient(336.74deg, #DCFFFF 6.1%, rgba(220, 255, 255, 0) 116.14%);
+        border-radius: 12px;
+        padding: 34.59px 34px 0 34px;
+        position: relative;
+    }
+
+    &__card-image {
+        position: absolute;
+        top: 170px;
+        left: 101px;
+    }
+
+    &__box {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 17.25px;
+        inline-size: 215px;
+        height: 80px;
+        position: absolute;
+        background: #FEFEFE;
+        box-shadow: 0px 10px 40px -10px rgba(32, 96, 108, 0.1);
+        border-radius: 4px;
+        bottom: -33px;
+        left: 101px;
+
+        > p {
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 126.5%;
+            color: #579ECE;
+        }
+    }
 }
