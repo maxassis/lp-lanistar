@@ -5,6 +5,11 @@
         background: url("../images/mockup.png") bottom no-repeat;
         background-position-x: right;
         padding-block: 92.93px 0;
+
+        // background: url("../images/mockup.png"); 
+        // background-repeat:no-repeat;
+        // background-size:contain;
+        // background-position:right;
         position: relative;
 
         &::before {
@@ -98,6 +103,7 @@
 .payment {
     height: 424px;
     padding-top: 124px;
+    background-color: #FFFFFF;
 
     &__wrapper {
         border-bottom: 2px solid rgba(205, 209, 214, .301);
@@ -154,6 +160,7 @@
 
 .bank-details {
     height: 842px;
+    background: linear-gradient(0deg, #F6F6F8 -21.04%, rgba(246, 246, 248, 0) 16.74%);
 
     &__content-wrapper {
         display: flex;
@@ -254,4 +261,94 @@
             color: #579ECE;
         }
     }
+}
+
+.one-payment {
+
+    &__external-container {
+        padding-top: 128px;
+        height: 993px;
+    }
+
+    &__text-wrapper {
+        inline-size: 494.03px;
+        height: 80px;
+        margin-inline: auto;
+        text-align: center;
+
+        &>span {
+            font-weight: 500;
+            font-size: 40px;
+            line-height: 100%;
+            text-transform: uppercase;
+            color: #7C8999;
+        }
+    }
+
+    &__cards {
+        height: 440.85px;
+        margin-top: 91.32px;
+        position: relative;
+        background: url(../images/cards_group.png);
+        background-repeat:no-repeat;
+        background-size:contain;
+        background-position:right;
+    }
+
+    &__arrow-left {
+        display: grid;
+        place-items: center;
+        background: #07BCFF;
+        inline-size: 42px;
+        aspect-ratio: 1;
+        border-radius: 50%;
+        cursor: pointer;
+        position: absolute;
+        inset: 0 370px 0 0;
+        margin: auto;
+    }
+
+    &__arrow-right {
+        display: grid;
+        place-items: center;
+        background: #07BCFF;
+        inline-size: 42px;
+        aspect-ratio: 1;
+        border-radius: 50%;
+        cursor: pointer;
+        position: absolute;
+        inset: 0 0 0 395px;
+        margin: auto;
+    }
+
+    &__colors {
+        display: grid;
+        align-content: space-between;
+        inline-size: 140px;
+        height: 60.63px;
+        margin-inline: auto;
+        margin-top: 57.88px;
+
+        &>img {
+            margin-inline: auto;
+        }
+
+        &>span {
+            margin-inline: auto;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 100%;
+            text-align: center;
+            text-transform: uppercase;
+            color: #7C8999;
+            margin-top: 8px;
+        }
+
+    }
+}
+
+.flow {
+    height: 866px;
+    background: #0A1D2E;
+   
 }
