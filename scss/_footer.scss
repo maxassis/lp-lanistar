@@ -1,0 +1,39 @@
+.footer {
+
+    &__external-container {
+        height: 648px;
+        border: 1px solid red;
+    }
+
+    &__links-container {
+        display: flex;
+        justify-content: space-between;
+        height: 261.21px;
+        border: 1px solid red;
+        margin-top: 110px;
+    }
+
+    &__stores-wrapper {
+        inline-size: fit-content;
+        border: 1px solid red;
+        display: grid;
+        gap:23.69px
+    }
+
+    &__items-wrapper {
+        inline-size: 585px;
+        height: 200px;
+        border: 1px solid red;
+    }
+
+    &__social {
+        display: flex;
+        height: fit-content;
+        inline-size: 120px;
+        border: 1px solid red;
+
+
+    }
+
+
+}

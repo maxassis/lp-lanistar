@@ -529,3 +529,79 @@
         }
     }
 }
+
+.miles {
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+
+    &__external-container {
+        height: 580px;
+        background-size: cover;
+        background-color: #0A1D2E;
+        background-image: url(../images/mask.png);
+        background-repeat: no-repeat;
+    }
+
+    &__text-wrapper {
+    
+        display: inline-block;
+        inline-size: 512px;
+        height: 332px;
+        margin-top: 101px;
+
+        >p {
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 155%;
+            letter-spacing: -0.005em;
+            color: #F6F6F6; 
+            margin-top: 25px; 
+        }
+
+    }
+
+    &__title {
+        font-weight: 400;
+        font-size: 56px;
+        line-height: 100%;
+        letter-spacing: -0.01em;
+        text-transform: uppercase;
+        color: rgba(253, 253, 253, 0.7);
+    }
+
+    &__button {
+        background: #07BCFF;
+        border-radius: 6px;
+        padding: 15px 32px;
+        border: 0;
+        margin-top: 32px;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 140%;
+        text-transform: uppercase;
+        color: #FFFFFF;
+    }
+
+    &__wrapper-images {
+        position: relative;
+        inline-size: 616.59px;
+        height: 494px;
+        margin-top: 85.81px;
+
+    }
+
+    &__master-img {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    &__cell-img {
+        position: absolute;
+        right: 0;
+        top: 99px;
+    }
+
+
+}
