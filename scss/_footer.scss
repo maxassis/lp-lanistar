@@ -1,38 +1,110 @@
 .footer {
+    
 
     &__external-container {
         height: 648px;
-        border: 1px solid red;
+        padding-top: 110px;
     }
 
     &__links-container {
+        position: relative;
         display: flex;
         justify-content: space-between;
         height: 261.21px;
-        border: 1px solid red;
-        margin-top: 110px;
+        border-bottom: 2px solid rgba(205,209,214,.301);
+
+        &:before{
+            content: "";
+            width: 1273.5px;
+            height: 2px;
+            background-color: rgba(255,179,252,.5);
+            position: absolute;
+            top: -7px;
+        }
+    }
+
+    &__logo{
+        width:47.38px;
+        height:48.07px;
     }
 
     &__stores-wrapper {
         inline-size: fit-content;
-        border: 1px solid red;
+        height: fit-content;
         display: grid;
         gap:23.69px
     }
 
     &__items-wrapper {
+        display: flex;
+        justify-content: space-between;
         inline-size: 585px;
-        height: 200px;
-        border: 1px solid red;
+        height: 200px;  
+    }
+
+    &__item{
+        display: flex;
+        align-items: center;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 140%;
+        letter-spacing: -0.005em;
+        color: #475567;
+        margin-bottom: 32px;
+
+        >img {
+            margin-right: 16px;
+            display: inline-block;
+        }
+    }
+
+    &__icon-item{
+        margin-bottom: 32px;
     }
 
     &__social {
         display: flex;
+        justify-content: space-between;
         height: fit-content;
         inline-size: 120px;
-        border: 1px solid red;
+    }
 
+    &__paragraph{
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 160%;
+        letter-spacing: -0.005em;
+        color: #475567;
+        margin-top: 58px;
+    }
 
+    &__copyright{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 66px;
+    }
+
+    &__copyright-icons {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+
+        >span {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 160%;
+            text-align: right;
+            letter-spacing: -0.005em;
+            color: #475567;
+        }
+    }
+
+    &__message-icon {
+        position: absolute;
+        right: 46px;
+        bottom: 23px;
     }
 
 
