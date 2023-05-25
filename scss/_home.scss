@@ -21,6 +21,10 @@
             rotate: 90deg;
             left: -11.2%;
             top: 49%;
+
+            @media (width < 1350px) {
+                display: none;
+            }
         }
 
         &::after {
@@ -32,6 +36,10 @@
             rotate: 90deg;
             right: -11.3%;
             top: 49%;
+
+            @media (width < 1350px) {
+                display: none;
+            }
         }
     }
 

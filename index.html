@@ -15,6 +15,19 @@
 </head>
 
 <body>
+    <div class="menu-mobile">
+        <h2>SECURITY</h2>
+        <h2>FEATURES</h2>
+        <h2>FUNDAMENTALS</h2>
+
+        <div class="menu-mobile__divider"></div>
+
+        <img class="menu-mobile__icon" src="./images/card_icon_mobile.svg" />
+
+        <h2 style="margin-top: 16px">PRE-REGISTER NOW</h2>
+    </div>
+    
+
     <header class="header__external-container">
         <div class="container header">
             <img src="./images/Frame 1.svg" />
@@ -25,9 +38,15 @@
                 <h3 class="bar16">FUNDAMENTALS</h3>
             </div>
 
-            <div class="header__country">
-                <img src="./images/eua.svg" />
-                <img src="./images/arrow_dow.svg" />
+            <div class="header__country-wrapper">
+                <div class="header__country">
+                    <img src="./images/eua.svg" />
+                    <img src="./images/arrow_dow.svg" />
+                </div>
+
+                <img class="header__open" onclick="showMenu()" src="./images/open_mobile.svg" />
+                <img class="header__close" onclick="showMenu()" src="./images/close_mobile.svg" />
+
             </div>
 
             <div class="header__register">
@@ -35,6 +54,14 @@
                 <h3 class="bar16">PRE-REGISTER NOW</h3>
             </div>
         </div>
+
+       
+       
+
+        </div>
+
+
+
     </header>
 
     <div class="hero__external-container">
@@ -349,7 +376,7 @@
 
 
 
-
+    <script src="./scripts.js"></script>
 </body>
 
 </html>
