@@ -415,17 +415,27 @@
     &__external-container {
         padding-top: 128px;
         height: 993px;
+
+        @media (width < 991px) {
+            padding-top: 78px;
+            height: 850px;
+        }
     }
 
     &__text-wrapper {
-        inline-size: 494.03px;
+        inline-size: min(100%, 494.03px);
         height: 80px;
         margin-inline: auto;
         text-align: center;
 
+        @media (width < 991px) {
+            height: auto;
+        }
+
+
         &>span {
             font-weight: 500;
-            font-size: 40px;
+            font-size: clamp(2.00rem, calc(1.82rem + 0.75vw), 2.50rem);
             line-height: 100%;
             text-transform: uppercase;
             color: #7C8999;
@@ -436,10 +446,24 @@
         height: 440.85px;
         margin-top: 91.32px;
         position: relative;
-        background: url(../images/cards_group.png);
-        background-repeat:no-repeat;
-        background-size:contain;
-        background-position:right;
+        
+        @media (width < 991px) {
+            margin-top: 56px;
+        }
+
+        @media (width > 450px) {
+            background: url(../images/cards_group.png);
+            background-repeat:no-repeat;
+            background-size:cover;
+            background-position:center;
+        }
+
+        @media (width <= 450px) {
+            background: url("../images/card-red__mobile.png");
+            background-repeat:no-repeat;
+            background-size:cover;
+            background-position:center;
+        }
     }
 
     &__arrow-left {
@@ -475,6 +499,10 @@
         height: 60.63px;
         margin-inline: auto;
         margin-top: 57.88px;
+
+        @media (width <= 375px) {
+            margin-top:42px;
+        }
 
         &>img {
             margin-inline: auto;
