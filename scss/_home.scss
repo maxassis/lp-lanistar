@@ -679,9 +679,19 @@
     align-items: center;
     justify-content: space-between;
 
+    @media (width <= 991px) {
+        flex-direction: column;
+    }
+
+
     &__external-container {
         height: 230px;
         border-bottom: 2px solid rgba(205,209,214,.301);
+
+        @media (width <= 991px) {
+            height: 445px;
+            padding-block: 66px;
+        }
     }
 
     &__item {
@@ -704,7 +714,7 @@
     &__icon-wrapper {
         display: grid;
         place-items: center;
-        width: 72px;
+        min-width: 72px;
         height: 72px;
         background: linear-gradient(62.35deg, #07BCFF -35.85%, rgba(121, 236, 170, 0) 147.1%);
         border-radius: 8px;
