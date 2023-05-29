@@ -155,6 +155,10 @@
     &__wrapper {
         border-bottom: 2px solid rgba(205, 209, 214, .301);
         height: 100%;
+
+        @media (width < 768px) {
+            border-bottom: 0;
+        }
     }
 
     &__text-wraper {
@@ -180,6 +184,7 @@
 
         @media (width < 768px) {
             display: block;
+            height: auto;
         }
     }
 
@@ -223,25 +228,87 @@
 
 }
 
+.section-mobile {
+    display: none;
+    height: 93px;
+    background-color: #F9F9FC;
+
+    @media (width < 768px) {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    &__item {
+        display: grid;
+        place-items: center;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 140%;
+        letter-spacing: -0.01em;
+        color: #7C8999;
+        position: relative;
+    }
+
+    &__item--active {
+        &:after {
+            content: "";
+            position: absolute;
+            width: 100%;
+            border-bottom: 4px solid #07BCFF;
+            bottom: 0px;
+        }
+    }
+
+}
+
+
 .bank-details {
     height: 842px;
     background: linear-gradient(0deg, #F6F6F8 -21.04%, rgba(246, 246, 248, 0) 16.74%);
+
+    @media (width < 991px) {
+        height: 1250px;
+    }
+
+
+    &__container {
+        padding-top: 124px;
+
+        @media (width < 991px) {
+            padding-top: 0;
+        }
+    }
 
     &__content-wrapper {
         display: flex;
         justify-content: space-between;
         height: 582px;
+
+        @media (width < 991px) {
+            flex-direction: column;
+            height: auto;
+        }
+
     }
 
     &__text-wrapper {
         inline-size: 535px;
         height: 521px;
         margin-top: 38px;
+
+        @media (width < 991px) {
+            inline-size: 333px;
+            height: auto;
+            margin-top: 50px;
+            margin-inline: auto;
+        }
+
+
     }
 
     &__main-title {
         font-weight: 500;
-        font-size: 40px;
+        font-size: clamp(2.00rem, calc(1.82rem + 0.75vw), 2.50rem);
         line-height: 140%;
         text-transform: uppercase;
         color: #7C8999;
@@ -297,6 +364,21 @@
         border-radius: 12px;
         padding: 34.59px 34px 0 34px;
         position: relative;
+
+        @media (width < 991px) {
+            margin-inline: auto;
+            display: none;
+        }
+    }
+
+    &__image-mobile {
+        display: none;
+        margin-inline: auto;
+        margin-top: 51px;
+
+        @media (width < 991px) {
+            display: block;
+        }
     }
 
     &__card-image {
