@@ -968,3 +968,50 @@
     }
 
 }
+
+.dialog {
+    display: flex;
+    inline-size: min(100%, 1000px);
+    height: 500px;
+    border: none;
+    background: #FFFFFF;
+    border-radius: 8px;
+    position: fixed;
+    inset: 0;
+    z-index: 9999999999999;
+    inset: 0;
+    margin: auto;
+   
+    ::backdrop {
+        background-color: hsl(0, 0, 0, 1);
+    } 
+
+    &__image-wrapper {
+        width: 370px;
+        height: 100%;
+        background-color: #FFA6E3;
+        padding: 48px 27.93px 53.94px 27.35px;
+        position: relative;
+    }
+
+    &__card {
+        position: absolute;
+        top: 121px;
+        left: 0;
+    }
+
+    &__content-wrapper {
+        inline-size: 100%;
+        height: 100%;
+        padding: 37px 35px 97px 63px;
+    }
+
+
+    &__close-wrapper {
+        max-width: 530px;
+        width: 100%;
+        height: 36px;
+        border: 1px solid red;
+    }
+
+}

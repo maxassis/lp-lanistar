@@ -32,3 +32,17 @@ function showMenu() {
   items.forEach((item) => {
     item.addEventListener("click", activeItem);
   })
+
+
+const dialog = document.querySelector("dialog")
+window.addEventListener('load', openModal);
+
+function openModal() {
+  body.style.overflow = "hidden";
+  dialog.showModal()
+}
+
+function closeModal() {
+  body.style.overflow = "auto";
+  dialog.close()
+}
