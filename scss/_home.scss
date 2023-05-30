@@ -831,20 +831,38 @@
     justify-content: space-between;
     overflow: hidden;
 
+    @media (width < 991px) {
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+
     &__external-container {
         height: 580px;
         background-size: cover;
         background-color: #0A1D2E;
         background-image: url(../images/mask.png);
         background-repeat: no-repeat;
+
+        @media (width < 991px) {  
+            height: auto;
+        }
     }
 
     &__text-wrapper {
-    
         display: inline-block;
         inline-size: 512px;
         height: 332px;
         margin-top: 101px;
+
+        @media (width < 991px) {
+            margin-top: 78px;
+        }
+
+        @media (width < 600px) {
+           inline-size: auto;
+        }
 
         >p {
             font-weight: 400;
@@ -859,7 +877,7 @@
 
     &__title {
         font-weight: 400;
-        font-size: 56px;
+        font-size: clamp(2.00rem, calc(1.57rem + 2.14vw), 3.50rem);
         line-height: 100%;
         letter-spacing: -0.01em;
         text-transform: uppercase;
@@ -884,20 +902,50 @@
         inline-size: 616.59px;
         height: 494px;
         margin-top: 85.81px;
+    
+        @media (width < 991px) {
+            margin-top: 0;
+            max-width: 616.59px;
+            width: 100%;
+         }
 
+        @media (width < 375px) {
+            display: none;
+         }
     }
 
     &__master-img {
         position: absolute;
         right: 0;
         top: 0;
+
+        @media (width < 991px) {
+            position: relative
+         }
+
+         @media (width < 500px) {
+            display: none;
+         }
     }
 
     &__cell-img {
         position: absolute;
         right: 0;
         top: 99px;
+
+        @media (width < 500px) {
+            right: -104px;
+         }
     }
 
+    &__img-mobile {
+        margin-top: 30px;
+        display: none;
+
+        @media (width < 375px) {
+            display: block;
+         }
+
+    }
 
 }
