@@ -71,15 +71,25 @@
         width: 125px;
         align-items: center;
         gap: 40px;
+    }
+
+    &__toggle {
 
         >img {
             cursor: pointer;
 
-            @media (width > 991px) {
+            &:nth-child(2) {
                 display: none;
-            }
+            } 
         }
+
+        @media (width > 991px) {
+            display: none;
+        }
+
     }
+
+
 
     &__country {
         display: flex;
@@ -87,22 +97,6 @@
         align-items: center;
         inline-size: 48px;
         height: 24px;
-    }
-
-    &__open {
-        display: none;
-
-        @media (width < 991px) {
-            display: block;
-        }
-    }
-
-    &__close {
-        display: none;
-
-        @media (width < 991px) {
-            display: block;
-        }
     }
 
     &__register{
@@ -135,6 +129,10 @@
     transition: opacity 0.4s ease-in-out;
     pointer-events: none;
 
+    @media (width > 991px) {
+        display: none;
+    }
+
     >h2 {
         font-weight: 400;
         font-size: 24px;
@@ -166,4 +164,12 @@
         opacity: 1;
         pointer-events: all;
     }
+
+    &--show-btn {
+        display: block;
+    } 
+    
+    &--hide-btn {
+        display: none;
+    }  
 }
