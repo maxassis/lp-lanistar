@@ -1,18 +1,32 @@
 .hero {
+    padding-top: 92.93px;
+    height: 107%;
+    border-left: 2px solid hsla(302, 100%, 85%, 0.5);
+    border-right: 2px solid hsla(302, 100%, 85%, 0.5);
+
+    @media (width < 1250px) {
+        border: 0;
+    }
+
+    @media (width < 991px) {
+        padding-top: 59px;         
+    }
 
     &__external-container {
         height: 936px;
         background-position-x: right;
         position: relative;
         margin-top: 96.07px;
-        padding-top: 92.93px;
 
         @media (width < 1200px) {
-            padding-block: 59px 0;
             height: 1050px;
             >img {
                 display: none;
             }
+        }
+
+        @media (width < 991px) {
+            margin-top: 72px;         
         }
 
         @media (width >= 376px) {
@@ -22,36 +36,6 @@
         @media (width <= 375px) {
             background: url("../images/mobile-background.png") bottom no-repeat;
             height: 806px;
-        }
-
-        &::before {
-            content: "";
-            inline-size: 1113px;
-            height: 2px;
-            background-color: hsla(302, 100%, 85%, 0.5);
-            position: absolute;
-            rotate: 90deg;
-            left: -11.2%;
-            top: 49%;
-
-            @media (width < 1350px) {
-                display: none;
-            }
-        }
-
-        &::after {
-            content: "";
-            inline-size: 1113px;
-            height: 2px;
-            background-color: hsla(302, 100%, 85%, 0.5);
-            position: absolute;
-            rotate: 90deg;
-            right: -11.3%;
-            top: 49%;
-
-            @media (width < 1350px) {
-                display: none;
-            }
         }
     }
 
@@ -111,6 +95,13 @@
         border: none;
         margin-top: 40px;
         color: #FFFFFF;
+        transition: background 0.2s ease-in-out;
+
+        &:hover {
+            cursor: pointer;
+            background: #008ECB;
+        }
+
     }
 
     &__coming-soon {
@@ -248,9 +239,19 @@
         letter-spacing: -0.01em;
         color: #7C8999;
         position: relative;
+        cursor: pointer;
+        transition: all 0.2s ease;
+
+        &:hover {
+            color: #475567;
+        }
+
+
     }
 
     &__item--active {
+        color: #475567;
+
         &:after {
             content: "";
             position: absolute;
@@ -361,6 +362,12 @@
         text-transform: uppercase;
         color: #FFFFFF;
         margin-top: 48px;
+        transition: background 0.2s ease-in-out;
+
+        &:hover {
+            cursor: pointer;
+            background: #008ECB;
+        }
     }
 
     &__image-wrapper {
@@ -896,6 +903,12 @@
         line-height: 140%;
         text-transform: uppercase;
         color: #FFFFFF;
+        transition: background 0.3s ease-in-out;
+
+        &:hover {
+            cursor: pointer;
+            background: #008ECB;
+        }
     }
 
     &__wrapper-images {

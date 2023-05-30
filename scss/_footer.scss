@@ -110,6 +110,7 @@
         letter-spacing: -0.005em;
         color: #475567;
         margin-bottom: 32px;
+        cursor: pointer;
 
         >img {
             margin-right: 16px;
@@ -137,6 +138,10 @@
         justify-content: space-between;
         height: fit-content;
         inline-size: 120px;
+
+        >img {
+            cursor: pointer;
+        }
 
         @media (width < 991px) {
             margin-right: 202px;
