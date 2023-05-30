@@ -3,8 +3,9 @@
     &__external-container {
         height: 936px;
         background-position-x: right;
-        padding-block: 92.93px 0;
         position: relative;
+        margin-top: 96.07px;
+        padding-top: 92.93px;
 
         @media (width < 1200px) {
             padding-block: 59px 0;
@@ -912,6 +913,11 @@
         @media (width < 375px) {
             display: none;
          }
+    }
+
+    &__blue-card-img {
+        position: relative; 
+        z-index: 2;
     }
 
     &__master-img {
