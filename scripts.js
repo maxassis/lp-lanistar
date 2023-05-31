@@ -35,7 +35,9 @@ function showMenu() {
 
 
 const dialog = document.querySelector("dialog")
-window.addEventListener('load', openModal);
+const btn = document.querySelector("button")
+console.log(dialog)
+// window.addEventListener('load', openModal);
 
 function openModal() {
   body.style.overflow = "hidden";
@@ -43,6 +45,13 @@ function openModal() {
 }
 
 function closeModal() {
-  body.style.overflow = "auto";
   dialog.close()
+  body.style.overflow = "auto";  
 }
+
+const close = document.querySelector("#modal-close");
+btn.addEventListener("click", closeModal);
+close.addEventListener("click", closeModal);
+
+
+
