@@ -982,7 +982,7 @@
     margin: auto;
 
     &::backdrop {
-        background-color: hsl(0, 0, 0, 1);
+        background-color: hsl(0, 0, 0, 0.9);
     }
 
     &__container {
