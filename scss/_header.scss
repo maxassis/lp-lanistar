@@ -5,13 +5,14 @@
 }
 
 .header__external-container {  
+    width: 100vw;
     height: 96px;
     background: #FFFFFF;
     backdrop-filter: blur(24px);
     border-bottom: 1px solid hsla(213, 10%, 82%, 0.301);
     position: fixed;
     z-index: 18; 
-    inset: 0;
+    top: 0;
 
     @media (width < 991px) {
         height: 72px;
@@ -116,7 +117,7 @@
 
 
 .menu-mobile {
-    width: 100%;
+    width: 100vw;
     height: 100dvh;
     padding-top: 47px;
     position: fixed;
