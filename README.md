@@ -1,6 +1,6 @@
 # Lanistar Landing Page
 
-Landing Page do carão Lanistar
+Landing Page do cartão Lanistar
 
 
 ## Technologies
